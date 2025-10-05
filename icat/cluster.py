@@ -26,9 +26,9 @@ if not st.session_state.authenticated:
 def get_connection():
     return mysql.connector.connect(
         host="localhost",
-        user="root",
-        password="",
-        database="icat_db"
+        user="uipbsitz_try",
+        password="uipbsitz_try",
+        database="uipbsitz_try"
     )
 
 # ----------------- LOAD & PREPARE DATA -----------------
@@ -305,5 +305,6 @@ plot_cluster_view(df_valid, "manual_dexterity", "(Course Context)")
 st.markdown("**Domain View (Course)**")
 plot_course_view("manual_dexterity")
 st.markdown("---")
+
 
 st.caption("💡 **Insight Tip**: Do the K-Means centroids (red X) fall near dense regions of a particular course or gender? That suggests alignment between natural clusters and real groups.")
