@@ -25,9 +25,9 @@ if not st.session_state.authenticated:
 # ----------------- DATABASE CONNECTION -----------------
 def get_connection():
     return mysql.connector.connect(
-        host="localhost",
-        user="uipbsitz_try",
-        password="uipbsitz_try",
+        host="supersystem.com",
+        user="uipbsitz_superUSER",
+        password="@K0$1yoOsHI",
         database="uipbsitz_try"
     )
 
@@ -308,3 +308,4 @@ st.markdown("---")
 
 
 st.caption("💡 **Insight Tip**: Do the K-Means centroids (red X) fall near dense regions of a particular course or gender? That suggests alignment between natural clusters and real groups.")
+
